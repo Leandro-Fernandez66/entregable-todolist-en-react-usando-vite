@@ -1,8 +1,23 @@
-# React + Vite
+Esta es una aplicacion de un to-do list en React usando Vite, la cual agrega, borra y marca como completada tareas.
+Esta aplicacion va utilizar una data ya proporcionada por lo que sera necesario JSON Server.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Instrucciones de Instalación:
 
-Currently, two official plugins are available:
+1)primeramente es necesario tener Node.js instalado.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2)clonar el repositorio:
+   - git clone url del repositorio
+   - cd url del repositorio
+
+3)instalar dependencias:
+   - npm install
+     
+4)instalar JSON Server: 
+   npm install -g json-server   
+
+5)levantar JSON Server, ⁠para eso en la carpeta donde se encuentra el archivo ejecutar:
+   json-server --watch db.json
+
+6)Iniciar servidor de desarrollo:
+  - npm run dev
+
