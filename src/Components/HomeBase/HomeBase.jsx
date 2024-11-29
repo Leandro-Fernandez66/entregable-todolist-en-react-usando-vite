@@ -6,7 +6,6 @@ import AddTodoForm from "../AddTodoForm/AddTodoForm.jsx";
 function HomeBase() {
   const [task, setTask] = useState({ name: "", description: "", creator: "" });
   const [tasks, setTasks] = useState([]);
-  const [completedTask, setCompletedTask] = useState(false);
 
   useEffect(() => {
     async function fetchTasks() {
@@ -49,8 +48,8 @@ function HomeBase() {
     }
     putData()
 
-    setCompletedTask(!completedTask)
-    setTasks(tasks)
+    const taskCheck = [...tasks]
+    setTasks(taskCheck)
   };
 
   const handleChange = (event) => {
